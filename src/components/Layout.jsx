@@ -4,12 +4,14 @@ import Header from './Header';
 import Footer from './Footer';
 
 class Layout extends React.Component{
+  
 
   render(){
     return (
       <React.Fragment>
         <Header />
-        <Footer />
+          {this.props.children}
+        <Footer isActive={this.props.isActive} />
       </React.Fragment>
     )
   }

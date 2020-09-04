@@ -1,0 +1,49 @@
+@import '../../styles/vars.scss';
+@import '../../styles/mixins.scss';
+
+.ToBlog{
+  // border: 1px solid blue;
+  width: 100vw;
+  height: 85vh;
+  background-image: url('../../images/Cover.png');
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: 100% 100%;
+  position: relative;
+  @include flexbox(center,flex-start);
+}
+
+.ToBlog__details{
+  // border: 1px solid red;
+  position: absolute;
+  margin-top: 3%;
+  @include flexbox(center,center,column);
+
+}
+
+.ToBlog__title{
+  font-size: 3.5rem;
+  font-weight: normal;
+  color: white;
+  font-family: $font-roboto;
+}
+
+.ToBlog__button{
+  width: auto;
+  height: auto;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: $color-green-random;
+  @include flexbox();
+  &:hover{
+    transform: scale(0.8);
+    cursor: pointer;
+  }
+  & a{
+    font-size: 1.5rem;
+    color: white;
+    font-family: $font-roboto;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}

@@ -5,7 +5,7 @@
 .Header{
   // border: 1px solid red;
   width: 100vw;
-  height: 150px;
+  height: 15vh;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 35% 65%;
@@ -45,6 +45,10 @@
   }
 
   & a{
+    font-family: $font-roboto;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    font-weight: normal;
     margin-right: 5vw;
     color: white;
     text-decoration: none;

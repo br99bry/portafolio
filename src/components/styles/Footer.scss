@@ -1,0 +1,9 @@
+@import '../../styles/vars.scss';
+@import '../../styles/mixins.scss';
+
+.Footer{
+  width: 100vw;
+  height: 10vh;
+  background-color: $color-blackSoft;
+  border-top: 35px solid $color-green-random;
+}
